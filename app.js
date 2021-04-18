@@ -53,7 +53,7 @@ function deleteCheck(event) {
         // console.log("trash clicked");
         const todo = item.parentElement; //get parent then remove it if this happens
         //Animation
-        todo.classList.add("fall");
+        todo.classList.add("fall");//deleting animation
         // todo.remove();
         todo.addEventListener('transitionend',function(){
             todo.remove();
@@ -64,7 +64,7 @@ function deleteCheck(event) {
     if(item.classList.value === "complete-btn"){
         // console.log("check clicked");
         const todo = item.parentElement;
-        todo.classList.toggle("completed");
+        todo.classList.toggle("completed"); //returns true or false based on class is present or not
     }
 
 }
